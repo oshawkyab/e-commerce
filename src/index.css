@@ -1,3 +1,17 @@
+@import "tailwindcss";
+* {
+  font-family: "montaserat";
+}
 button {
   cursor: pointer;
+}
+
+:root {
+  -primary-color: ;
+}
+
+/* Customization Fonts */
+@font-face {
+  font-family: "montaserat";
+  src: url("./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf");
 }
