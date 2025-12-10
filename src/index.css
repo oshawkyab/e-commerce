@@ -6,8 +6,81 @@ button {
   cursor: pointer;
 }
 
+/** CUSTOMIZE COLOR IN WEB APP **/
 :root {
-  -primary-color: ;
+  --main-color: #0090f0;
+  --p-color: #7b7b7b;
+  --bg-color: #f3f3f3;
+  --white-color: #fff;
+  --color-heading: #253237;
+  --border-color: #d6d6d6d5;
+}
+
+body {
+  background: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+}
+
+span {
+  color: var(--main-color);
+}
+
+p {
+  color: var(--p-color);
+}
+input,
+button,
+select,
+textarea {
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-heading);
+}
+
+.container {
+  width: 80%;
+  max-width: 1350px;
+  margin: auto;
+}
+.navbarResponsive {
+  animation-name: navbar;
+  animation-duration: 0.6s;
+}
+
+.active {
+  scale: 1.1;
+  opacity: 1 !important;
+  background-color: #0061a1;
+}
+
+@keyframes navbar {
+  0% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Customization Fonts */
